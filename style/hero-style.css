@@ -1,0 +1,152 @@
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/fly.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-buttons {
+  margin-top: 40px !important;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.hero-button {
+  display: list-item;
+  background: transparent;
+  border: 1px solid white;
+  padding: 15px 15px;
+  color: white;
+  margin: 10px;
+  /* width: 100%; */
+  font-size: 20px;
+}
+
+
+.hero-button:hover {
+  background: rgba(255, 218, 26, 1);
+  color: black;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+}
+
+.material-icons {
+  padding: 15px 5px;
+}
+
+.fraud-awareness {
+  display: flex;
+  margin-left: 30px;
+  justify-content: center;
+}
+
+.fraud-awareness p {
+  text-align: center;
+}
+
+.fraud-awareness p a {
+  text-decoration-line: underline;
+  color: white;
+}
+
+.covid-update p a {
+  text-decoration-line: underline;
+  color: white;
+}
+
+.yellow {
+  background: rgba(255, 218, 26, 1);
+  color: black;
+}
+
+.yellow:hover {
+  background: white;
+  color: black;
+}
+
+.covid-update {
+  text-align: center;
+}
+
+.covid-update p {
+  font-size: 15px;
+}
+
+.covid-update p a {
+  text-decoration-line: underline;
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-button {
+    font-size: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-image {
+    height: 100%;
+  }
+
+  .hero-text {
+    top: 55%;
+    left: 50%;
+  }
+
+  .fraud-awareness {
+    display: block;
+    margin-left: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .hero-button {
+    font-size: 12px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px !important;
+  }
+
+  .hero-text p {
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .covid-update p {
+    display: none !important;
+  }
+}
+
+

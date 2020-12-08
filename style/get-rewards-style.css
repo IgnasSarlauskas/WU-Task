@@ -1,0 +1,63 @@
+.get-rewards-section {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 150px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/wu.jpg");
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.reward-button {
+  background: #09151F !important;
+  color: white;
+  border: 1px solid #09151F;
+}
+
+.reward-button:hover {
+  background: white !important;
+  color: black;
+  border: 1px solid white;
+}
+
+.get-rewards-section ul {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .get-rewards-section {
+    margin-top: 30px;
+    height: 75%;
+  }
+
+  .get-rewards-section ul {
+    margin-top: 20px;
+  }
+
+  .get-rewards-section ul .reward-button {
+    font-size: 14px;
+  }
+
+  .get-rewards-section .content h2 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .get-rewards-section .content p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+}

@@ -1,0 +1,127 @@
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #09151F;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 150px;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+}
+
+.nav::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.open {
+  font-size: 30px;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-left: 10px;
+  color: #818181;
+}
+
+.open:hover {
+  color: #f1f1f1;
+}
+
+.header {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  background-color: #09151F;
+  z-index: 3;
+  position: fixed;
+
+}
+
+.logo {
+  background-image: url("https://www.westernunion.com/content/dam/wu/logo/logo.wu.big.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.nav a {
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: #f1f1f1;
+}
+
+.nav .closebtn {
+  position: absolute;
+  top: 70px;
+  right: 25px;
+  font-size: 28px;
+  margin-left: 10px;
+  color: #818181;
+}
+
+#navigation li a .fa-facebook,
+.fa-instagram {
+  font-size: 35px;
+  margin: 20px 10px;
+
+}
+
+.small {
+  display: flex;
+  align-self: center;
+  margin: 7px 0 30px 0;
+}
+
+#navigation ul li .break-line {
+  background-image: url("../img/icon_slashes.png");
+  margin-top: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    background-image: url("https://www.westernunion.com/content/dam/wu/logo/logo.wu.small.svg");
+  }
+
+  .nav a {
+    font-size: 10px;
+  }
+
+  #navigation li a .fa-facebook,
+  .fa-instagram {
+    font-size: 25px;
+    margin: 10px 5px;
+  }
+
+  .nav {
+    padding-top: 80px;
+  }
+
+  .nav .closebtn {
+    top: 50px;
+    right: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .nav a {
+    font-size: 8px;
+  }
+}
+
