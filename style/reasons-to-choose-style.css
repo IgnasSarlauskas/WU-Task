@@ -2,12 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0 auto;
 }
 
 .container {
-  margin: 50px 10px 10px 0;
+  margin: 50px 25px 25px 0;
 }
 
 .container .card .icon {
